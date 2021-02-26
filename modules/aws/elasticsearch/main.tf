@@ -1,7 +1,3 @@
-provider "aws" {
-  region                  = "us-west-2"
-  profile                 = "mufiz@cldcvr.com"
-}
 resource "aws_elasticsearch_domain" "example" {
   domain_name           = "example"
   elasticsearch_version = "7.8"

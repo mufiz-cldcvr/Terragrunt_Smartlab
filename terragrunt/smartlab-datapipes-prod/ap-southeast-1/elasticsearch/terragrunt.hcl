@@ -17,11 +17,16 @@ locals {
 # Terragrunt will copy the Terraform configurations specified by the source parameter, along with any files in the
 # working directory, into a temporary folder, and execute your Terraform commands in that folder.
   terraform {
-    source = "git@github.com:mufiz-cldcvr/Terragrunt_smartlab.git//?ref=v0.0.1"
+    source = "github.com/mufiz-cldcvr/Terragrunt_Smartlab/modules/aws/elasticsearch//"
   }
 
+# Include all settings from the root terragrunt.hcl file
+include {
+  path = find_in_parent_folders()
+}
+
 # These are the variables we have to pass in to use the module specified in the terragrunt configuration above
-inputs = {
+inputs = {  
 
   tags = {
     ManagedBy   = "CloudCover"

@@ -2,6 +2,6 @@
 # Set common variables for the region. This is automatically pulled in in the root terragrunt.hcl configuration to
 # configure the remote state bucket and pass forward to the child modules as inputs.
 locals {
-  region = "ap-southeast-1"
-  zones  = "ap-southeast-1a"
+  region = "us-west-2"
+  zones  = "us-west-2a"
 }
