@@ -72,7 +72,7 @@ variable "warm_enabled" {
 
 variable "warm_count" {
   type        = number
-  default     = 1
+  default     = 2
   description = "Number of UltraWarm nodes"
 }
 
@@ -108,7 +108,7 @@ variable "zone_awareness_enabled" {
 
 variable "availability_zone_count" {
   type        = number
-  default     = 1
+  default     = 2
   description = "Number of Availability Zones for the domain to use."
 }
 
