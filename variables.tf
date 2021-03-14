@@ -108,7 +108,7 @@ variable "zone_awareness_enabled" {
 
 variable "availability_zone_count" {
   type        = number
-  default     = 2
+  default     = 1
   description = "Number of Availability Zones for the domain to use."
 }
 
